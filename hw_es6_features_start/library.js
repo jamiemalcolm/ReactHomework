@@ -21,12 +21,12 @@
 // };
 
 class Library {
-  constructor(books){
-    this.books = [];
+  constructor(books = []){
+    this.books = books;
   }
 
   bookCount() {
-    return this.books.length();
+    return this.books.length;
   }
 
   addBook(newBook){
@@ -47,4 +47,4 @@ class Library {
   }
 }
 
-module.exports = Library;
+export default Library;
