@@ -38,6 +38,12 @@ class Library {
       this.books.push(book);
     });
   }
+
+  printInventory(){
+    this.books.forEach((book) => {
+      console.log(`${book.title} by ${book.author}`);
+    });
+  }
 }
 
 module.exports = Library;
